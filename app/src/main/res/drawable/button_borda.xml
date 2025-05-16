@@ -3,11 +3,11 @@
     android:shape="rectangle">
 
     <!-- Cor de fundo transparente -->
-    <solid android:color="@color/gray"/>
+    <solid android:backgroundTint="@color/material_dynamic_neutral95"/>
 
     <stroke
         android:width="2dp"
-        android:color="@color/black" />
+        android:color="@color/gray" />
 
     <!-- Cantos arredondados -->
     <corners android:radius="8dp" />
