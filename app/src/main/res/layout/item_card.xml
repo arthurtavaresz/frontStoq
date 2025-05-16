@@ -77,17 +77,20 @@
                 android:layout_marginEnd="4dp"
                 android:src="@drawable/ic_remove"
                 android:scaleType="fitCenter"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:backgroundTint="@color/material_dynamic_neutral95"
+                />
 
-            <ImageButton
-                android:id="@+id/btnAdicionarQtd"
+            <Button
+                android:id="@+id/btnAdicionarLista"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_weight="1"
-                android:layout_marginStart="4dp"
-                android:src="@drawable/ic_add"
-                android:scaleType="fitCenter"
-                android:padding="8dp"/>
+                android:text="Adicionar"
+                android:textColor="@color/black"
+                android:drawableRight="@drawable/lista_ic"
+                android:backgroundTint="@color/material_dynamic_neutral95"
+                />
 
         </LinearLayout>
 
