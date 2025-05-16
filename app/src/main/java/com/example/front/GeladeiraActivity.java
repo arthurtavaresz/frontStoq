@@ -21,12 +21,5 @@ public class GeladeiraActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_geladeira); // Crie este layout
 
-        btnVoltar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d("GeladeiraActivity", "Botão voltar clicado");
-                finish();
-            }
-        });
     }
 }
