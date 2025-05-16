@@ -15,6 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     private CardView btnGeladeira;
+    private Button btnAddProduto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +29,20 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btnGeladeira = findViewById(R.id.abrirGeladeira);
+        btnAddProduto = findViewById(R.id.btnAddProduto);
+
         btnGeladeira.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intentGeladeira = new Intent(MainActivity.this, GeladeiraActivity.class);
                 startActivity(intentGeladeira);
+            }
+        });
+        btnAddProduto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentAddProduto= new Intent(MainActivity.this, AdicionarProdutoActivity.class);
+                startActivity(intentAddProduto);
             }
         });
     }

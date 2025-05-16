@@ -29,14 +29,14 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
         android:alignmentMode="alignMargins"
         android:columnCount="2"
         android:useDefaultMargins="true"
-        app:layout_constraintBottom_toTopOf="@id/btnAdcProduto"
+        app:layout_constraintBottom_toTopOf="@id/btnAddProduto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/titulo"
+        card_view:layout_constraintBottom_toBottomOf="parent"
         card_view:layout_constraintHorizontal_bias="0.0"
         card_view:layout_constraintVertical_bias="0.862">
 
@@ -166,7 +166,7 @@
     </GridLayout>
 
     <Button
-        android:id="@+id/btnAdcProduto"
+        android:id="@+id/btnAddProduto"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/gray"

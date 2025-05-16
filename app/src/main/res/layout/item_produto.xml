@@ -35,17 +35,20 @@
             android:orientation="horizontal"
             android:layout_marginTop="8dp">
 
+
             <Button
                 android:id="@+id/btnRemover"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="Remover 1"/>
+                android:layout_weight="1"
+                android:backgroundTint="@color/gray"
+                android:text="Remover" />
 
             <Button
                 android:id="@+id/btnAdicionarLista"
                 android:layout_width="0dp"
                 android:layout_weight="1"
+                android:backgroundTint="@color/gray"
                 android:layout_height="wrap_content"
                 android:text="Adicionar à Lista"/>
         </LinearLayout>
