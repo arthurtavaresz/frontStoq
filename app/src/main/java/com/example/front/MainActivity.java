@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private CardView btnGeladeira;
     private CardView btnFreezer;
     private CardView btnDespensa;
-
+    private CardView btnListaCompras;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         btnGeladeira = findViewById(R.id.abrirGeladeira);
         btnFreezer = findViewById(R.id.abrirFreezer);
         btnDespensa = findViewById(R.id.abrirDespensa);
+        btnListaCompras = findViewById(R.id.abrirCompras);
 
         btnGeladeira.setOnClickListener(v -> {
             startActivity(new Intent(this, GeladeiraActivity.class));
@@ -44,6 +45,10 @@ public class MainActivity extends AppCompatActivity {
 
         btnDespensa.setOnClickListener(v -> {
             startActivity(new Intent(this, DespensaActivity.class));
+        });
+        
+        btnListaCompras.setOnClickListener(v -> {
+            startActivity(new Intent(this, ListaComprasActivity.class));
         });
     }
 }

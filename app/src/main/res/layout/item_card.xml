@@ -69,15 +69,15 @@
             android:layout_marginTop="12dp"
             android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/btnRemoverQtd"
+            <Button
+                android:id="@+id/btnRemover"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_weight="1"
-                android:layout_marginEnd="4dp"
-                android:src="@drawable/ic_remove"
-                android:scaleType="fitCenter"
-                android:padding="8dp"
+                android:text="Remover"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/black"
+                android:drawableRight="@drawable/remover_qtd"
                 android:backgroundTint="@color/material_dynamic_neutral95"
                 />
 
@@ -86,6 +86,7 @@
                 android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_weight="1"
+                android:layout_marginStart="8dp"
                 android:text="Adicionar"
                 android:textColor="@color/black"
                 android:drawableRight="@drawable/lista_ic"
