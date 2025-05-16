@@ -2,6 +2,7 @@ package com.example.front;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -15,7 +16,8 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     private CardView btnGeladeira;
-    private Button btnAddProduto;
+    private CardView btnFreezer;
+    private CardView btnDespensa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,23 +29,21 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
         btnGeladeira = findViewById(R.id.abrirGeladeira);
-        btnAddProduto = findViewById(R.id.btnAddProduto);
+        btnFreezer = findViewById(R.id.abrirFreezer);
+        btnDespensa = findViewById(R.id.abrirDespensa);
 
-        btnGeladeira.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentGeladeira = new Intent(MainActivity.this, GeladeiraActivity.class);
-                startActivity(intentGeladeira);
-            }
+        btnGeladeira.setOnClickListener(v -> {
+            startActivity(new Intent(this, GeladeiraActivity.class));
         });
-        btnAddProduto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentAddProduto= new Intent(MainActivity.this, AdicionarProdutoActivity.class);
-                startActivity(intentAddProduto);
-            }
+
+        btnFreezer.setOnClickListener(v -> {
+            Log.d("DEBUG", "Intent do Freezer chamada!");
+            startActivity(new Intent(this, FreezerActivity.class));
+        });
+
+        btnDespensa.setOnClickListener(v -> {
+            startActivity(new Intent(this, DespensaActivity.class));
         });
     }
 }

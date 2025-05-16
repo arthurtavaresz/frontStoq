@@ -47,7 +47,6 @@
             android:layout_height="150dp"
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
-            android:onClick="abrirGeladeira"
             card_view:cardCornerRadius="16dp"
             card_view:cardElevation="4dp">
 
@@ -78,7 +77,6 @@
             android:layout_height="150dp"
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
-            android:onClick="abrirFreezer"
             card_view:cardCornerRadius="16dp"
             card_view:cardElevation="4dp">
 
@@ -139,7 +137,6 @@
             android:layout_height="150dp"
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
-            android:onClick="abrirListaCompras"
             card_view:cardCornerRadius="16dp"
             card_view:cardElevation="4dp">
 

@@ -2,6 +2,7 @@ package com.example.front;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -13,7 +14,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class GeladeiraActivity extends AppCompatActivity {
-    private ImageButton btnVoltar = findViewById(R.id.btnVoltar);
+    private ImageButton btnVoltar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class GeladeiraActivity extends AppCompatActivity {
         btnVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d("GeladeiraActivity", "Botão voltar clicado");
                 finish();
             }
         });
