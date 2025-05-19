@@ -2,22 +2,18 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp">
-
-    <!-- Título -->
-
-    <!-- Container para o conteúdo embaixo do título -->
-
 
     <TextView
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="StoQ"
-        android:textColor="@color/black"
-        android:textSize="28sp"
+        android:textColor="@color/gray"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,23 +23,30 @@
         card_view:layout_constraintVertical_bias="0.052" />
 
     <!-- Grid dos Cards -->
+
     <GridLayout
         android:id="@+id/gridLayout"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:alignmentMode="alignMargins"
         android:columnCount="2"
         android:useDefaultMargins="true"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="157dp">
+        app:layout_constraintBottom_toTopOf="@id/btnAddProduto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titulo"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.0"
+        card_view:layout_constraintVertical_bias="0.606">
 
         <!-- CardView Geladeira -->
         <androidx.cardview.widget.CardView
+            android:id="@+id/abrirGeladeira"
             android:layout_width="0dp"
             android:layout_height="150dp"
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
-            android:onClick="abrirGeladeira"
             card_view:cardCornerRadius="16dp"
             card_view:cardElevation="4dp">
 
@@ -69,11 +72,11 @@
 
         <!-- CardView Freezer -->
         <androidx.cardview.widget.CardView
+            android:id="@+id/abrirFreezer"
             android:layout_width="0dp"
             android:layout_height="150dp"
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
-            android:onClick="abrirFreezer"
             card_view:cardCornerRadius="16dp"
             card_view:cardElevation="4dp">
 
@@ -99,6 +102,7 @@
 
         <!-- CardView Despensa -->
         <androidx.cardview.widget.CardView
+            android:id="@+id/abrirDespensa"
             android:layout_width="0dp"
             android:layout_height="150dp"
             android:layout_columnWeight="1"
@@ -128,11 +132,11 @@
 
         <!-- CardView Lista de Compras -->
         <androidx.cardview.widget.CardView
+            android:id="@+id/abrirCompras"
             android:layout_width="0dp"
             android:layout_height="150dp"
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
-            android:onClick="abrirListaCompras"
             card_view:cardCornerRadius="16dp"
             card_view:cardElevation="4dp">
 
@@ -159,14 +163,28 @@
     </GridLayout>
 
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/btnAddProduto"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:background="@color/gray"
+        android:backgroundTint="@color/gray"
         android:text="Adicionar Produto"
         card_view:layout_constraintBottom_toBottomOf="parent"
         card_view:layout_constraintEnd_toEndOf="parent"
         card_view:layout_constraintStart_toStartOf="parent"
         card_view:layout_constraintTop_toTopOf="parent"
         card_view:layout_constraintVertical_bias="0.781" />
+
+    <Button
+        android:id="@+id/btnProdutosVencidos"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gray"
+        android:text="Ver Produtos Vencidos"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.502"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"
+        card_view:layout_constraintVertical_bias="0.898" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
