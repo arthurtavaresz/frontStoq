@@ -16,7 +16,13 @@
             android:name=".FreezerActivity"
             android:exported="false" />
         <activity
+            android:name=".DespensaActivity"
+            android:exported="false"/>
+        <activity
             android:name=".GeladeiraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListaComprasActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

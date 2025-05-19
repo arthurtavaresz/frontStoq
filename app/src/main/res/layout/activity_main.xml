@@ -170,9 +170,23 @@
         android:text="Adicionar Produto"
         card_view:layout_constraintBottom_toBottomOf="parent"
         card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.502"
         card_view:layout_constraintStart_toStartOf="parent"
         card_view:layout_constraintTop_toTopOf="parent"
-        card_view:layout_constraintVertical_bias="0.781" />
+        card_view:layout_constraintVertical_bias="0.769" />
+
+    <Button
+        android:id="@+id/btnItemVencendo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gray"
+        android:text="Ver Produtos perto de vencer"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.497"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"
+        card_view:layout_constraintVertical_bias="0.878" />
 
     <Button
         android:id="@+id/btnProdutosVencidos"
@@ -185,6 +199,6 @@
         card_view:layout_constraintHorizontal_bias="0.502"
         card_view:layout_constraintStart_toStartOf="parent"
         card_view:layout_constraintTop_toTopOf="parent"
-        card_view:layout_constraintVertical_bias="0.898" />
+        card_view:layout_constraintVertical_bias="0.982" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

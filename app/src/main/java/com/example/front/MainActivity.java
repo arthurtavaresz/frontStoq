@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btnFreezer.setOnClickListener(v -> {
-            Log.d("DEBUG", "Intent do Freezer chamada!");
             startActivity(new Intent(this, FreezerActivity.class));
         });
 
